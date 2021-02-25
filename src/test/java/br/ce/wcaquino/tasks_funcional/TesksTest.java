@@ -10,7 +10,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -26,13 +26,13 @@ public class TesksTest {
 	}
 	
 	@Test
-	public void deveSalvarTarefaComSucesso() throws MalformedURLException {
+	public void deveSalvarTarefaComSucesso() throws MalformedURLException  {
 		WebDriver driver = acessarAplicacao();
 		try {
 			
 		
 		
-			 driver.findElement(By.id("addTodo")).click();	
+			driver.findElement(By.id("addTodo")).click();	
 			 
 			 driver.findElement(By.id("task")).sendKeys("Teste via selenium");	
 			 
